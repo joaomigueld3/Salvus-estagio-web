@@ -28,6 +28,6 @@
     "urllib": "^2.36.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.12"
   }
 }
