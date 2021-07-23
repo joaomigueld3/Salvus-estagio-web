@@ -1,0 +1,47 @@
+main{
+    flex:1; /*faz com que o main oculpe todo 
+    espaço disponível na tela, excluindo a Sidebar*/
+}
+main ul{    /*unordered list*/
+    display:grid; /*tipo grid*/
+    grid-template-columns: 1fr 1fr; /*ou repeat(2,1fr) grid em colunas*/
+    gap: 20px; /*espaçamento colum gap row gap*/
+    list-style: none;   /*tirar as bolinhas da lista*/
+    margin-top: 300px;
+}
+
+@media(max-width: 600px){   /*quando a tela tiver menor que 600px
+        eu modifico o grid pra apenas 1 coluna*/
+    main ul{
+    grid-template-columns: 1fr;
+    }
+}
+
+main .search-form{
+margin-top:20px;
+
+}
+main strong{
+    font-size: 34px;
+    text-align:center;
+}
+main .button-list{
+    margin-top:20px;
+
+}
+main ul li button[type=submit]{
+    width: 100%;
+    border: 0;
+    margin-top: 30px;
+    background: #489e8b;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;/*negrito(ctrl+B)*/
+    color: #333;
+    cursor: pointer;/*mudar o cursor*/
+    transition: background 0.5s;/*delay do hover*/
+}
+main ul li button[type=submit]:hover{/*escurecer ao passar o mouse*/
+    background: #065343;
+}

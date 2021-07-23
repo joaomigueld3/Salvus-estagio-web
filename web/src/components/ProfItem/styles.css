@@ -1,0 +1,56 @@
+
+li.prof-item{   /*editar todos os prof-items que são li's*/
+    background: rgb(196, 236, 196); /*branco*/
+    box-shadow: 0 0 15px 0 rgba(rgb(231, 123, 123), rgb(149, 229, 149), 0, 0.02);
+    border-radius: 10px;
+    padding:  15px;
+}
+
+li.prof-item header{
+    display: flex;  /*deixa o nome e especs ao lado da foto*/
+    flex-direction: row;
+    align-items: center;
+}
+
+li.prof-item header img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+} 
+
+li.prof-item header .user-info{
+ margin-left: 10px;   
+}
+
+.user-info strong{ /*nome: joao miguel*/
+    display:block;
+    font-size: 19px;
+    color: #333;
+}
+.user-info h1{
+    font-size: 16px;
+    color: #333;
+    margin-top: 2px;
+}
+.user-info span{ /*especialidades*/
+    font-size: 16px;
+    color: #333;
+    margin-top: 2px;
+}
+
+li.prof-item p{ /*biografia*/
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+li.prof-item a{ /*link*/
+    color: #ec032a;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+li.prof-item a:hover{
+color: #5f0413;
+}

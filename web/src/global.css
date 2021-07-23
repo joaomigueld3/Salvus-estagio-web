@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+    /*resetando comportamentos padrão de alguns
+     elementos dos html*/
+}
+
+html, body, #root{      /*html e body são as tags por volta da aplicação
+                        root é a div do index html onde todo código react cai*/
+    height: 100%; /*ocupar 100% da altura*/
+}
+
+body{
+    background: #E5E6F0;        /*cores do background*/
+    -webkit-font-smoothing: antialiased; /*propriedade do chrome que deixa a fonte mais legível*/
+    text-rendering: optimizeLegibility;
+}
+
+body, input, button{
+    font-family: Roboto, sans-serif;
+}

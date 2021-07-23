@@ -1,0 +1,70 @@
+aside{
+    width: 320px;    /*largura*/
+    background: rgb(196, 236, 196); /*branco*/
+    box-shadow: 0 0 15px 0 rgba(rgb(231, 123, 123), rgb(149, 229, 149), 0, 0.02);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+aside strong{
+    font-size: 20px;
+    text-align: center;
+    display: block;/*por padrão é inline*/
+    color: #333;
+}
+aside form{
+    margin-top: 30px;/*margem entre os labels*/
+}
+
+/*espaçamento apenas entre o Cadastrar e o primeiro label
+encontre todo input block que tenha um input block antes dele*/
+aside form .input-block + .input-block{
+    margin-top: 20px;
+}
+/*colocar label e input um ao lado do outro
+aside form .input-group{
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+tirar margem top do block, enquanto dentro de um input group
+todos os blocks não precisao de margem
+aside form .input-group .input-block{
+    margin-top: 0;
+}
+*/
+aside form .input-block label{
+color:#333; 
+font-size: 14px;
+font-weight: bold;
+display:  block ;
+
+}
+
+aside form .input-block input{
+    width: 250px;
+    height: 32px;
+    font-size: 14px;
+    color: #666;
+    border: 0px;
+    border-bottom: 1px solid #eee;
+
+}
+
+aside form button[type=submit]{
+    width: 100%;
+    border: 0;
+    margin-top: 30px;
+    background: #489e8b;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;/*negrito(ctrl+B)*/
+    color: #333;
+    cursor: pointer;/*mudar o cursor*/
+    transition: background 0.5s;/*delay do hover*/
+}
+
+aside form button[type=submit]:hover{/*escurecer ao passar o mouse*/
+    background: #065343;
+}

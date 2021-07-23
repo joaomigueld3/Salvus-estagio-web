@@ -1,0 +1,28 @@
+#app {
+  max-width: 1200px;  /*para tela grande e fica centralizado com o margin 0 auto*/
+  margin: 0 auto; /*centralizado*/
+  padding: 60px 30px; /*cima e baixo /direita e esquerda*/
+
+  display: flex;  /*tudo que tiver dentro de app:<aside> e <main> fique um ao lado da outra, numa linha(row) */
+  flex-direction: row;
+  align-items: flex-start;  /*alinhados ao topo*/
+}
+
+#app main{
+  margin-left: 30px;
+}
+
+@media(max-width: 1000px){/*quando a tela chegar a 1000px muda a organizaçao*/
+
+  #app{ /*reorganiza os apps em coluna*/
+    flex-direction: column;
+  }
+  #app main{  /*o conjuntos de listas não necessita mais de margem
+              esquerda, apenas no topo*/
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  #app aside{ /*o painel de cadastro oculpa 100 da largura*/
+    width: 100%
+  }
+}
