@@ -1,4 +1,6 @@
 # Salvus-estagio-web
+(Não está funcionando, pois para isso a url do banco de dados ficaria exposta.)
+
 Aplicação web para vaga de estágio salvus
 pra rodar aplicação: em /backend rodar "yarn dev"
                       em /web rodar "yarn start"
